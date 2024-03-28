@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     downloadBtn.style.display = "none";
 
     // Construct the API endpoint URL
-    const apiUrl = "http://10.2.0.2:5000/download";
+    const apiUrl = "http://127.0.0.1:5000/download";
 
     // Show loading GIF
     const loadingGIF = document.createElement("iframe");
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to trigger download of file
   function download_file(filename) {
     // Construct the download URL
-    const downloadUrl = `http://10.2.0.2:5000/download/${encodeURIComponent(
+    const downloadUrl = `http://127.0.0.1:5000/download/${encodeURIComponent(
       filename
     )}`;
 

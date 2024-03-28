@@ -5,7 +5,6 @@ from flask_cors import CORS
 import random
 from flask import send_from_directory
 
-from moviepy.editor import VideoFileClip, AudioFileClip
 app = Flask(__name__)
 CORS(app)
 FOLDER = os.path.join(app.root_path, 'static/video')
